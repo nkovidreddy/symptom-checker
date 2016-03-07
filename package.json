@@ -1,0 +1,30 @@
+{
+  "name": "symptom-checker",
+  "version": "1.0.0",
+  "description": "The code repository is for Symptom Checker Functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "Common Test Command Triggered"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nkovidreddy/symptomChecker"
+  },
+  "keywords": [
+    "symptom",
+    "health",
+    "checker",
+    "doctor"
+  ],
+  "author": "Kovid Dev Reddy Nalla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkovidreddy/symptomChecker/issues"
+  },
+  "homepage": "https://github.com/nkovidreddy/symptomChecker",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.6",
+    "passport": "^0.3.2"
+  }
+}
