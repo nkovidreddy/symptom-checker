@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <title>Symptom Checker Application - Mediclick Home</title>
+ <!-- Loading bootstrap and stylesheet -->
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css">
+ <style>
+ 	body {padding-top: 50px;}
+ </style>
+ <!-- JS -->
+ <!-- load angular and our custom application -->
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route.js"></script>
+ <script src="js/app.routes.js"></script>
+ <script src="js/app.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</script>
+
+</head>
+
+<body>
+	
+
+<!-- HEADER AND NAVBAR -->
+<!-- <header>
+	<nav class="navbar navbar-default">
+	<div class="navbar-header">
+	<a class="navbar-brand" href="/">MediClick</a>
+	</div>
+
+	<ul class="nav navbar-nav navbar-right">
+	<li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+	<li><a href="/about"><i class="fa fa-shield"></i> About Us</a></li>
+	<li><a href="/contact"><i class="fa fa-comment"></i> Contact Us</a></li>
+	</ul>
+	</nav>
+</header> -->
+
+<div class="jumbotron text-center">
+	 <h1>Home Page</h1>
+
+	<p>{{ home.message }}</p>
+
+	<form class="form-inline" ng-submit="home.search()">
+	<input type="text" class="form-control" placeholder="Enter Symptoms" ng-model="home.text">
+	<button type="submit" class="btn btn-success">Analyze Text for Symptoms</button>
+	<!-- <table ng-repeat="i in home.resultText"><i>{{i.keyword}}</i></table>
+	<text>New Text</text> -->
+	<text><i ng-repeat="i in home.resultText"></br>{{i}}</i></text>
+	<!-- <table>
+		<tr ng-repeat="i in home.resultText"><td>{{i}}</td></tr>
+
+	</table> -->
+	</form>
+
+</div>
+
+ </body>
+ </html>
